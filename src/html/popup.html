@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            min-width: 200px;
+            max-width: 400px;
+            max-height: 500px;
+            overflow: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            padding: 4px 0 4px 0;
+        }
+
+        input {
+            width: 90%;
+            font-size: 11px;
+            padding: 6px 0 4px 10px;
+            border: 1px solid #cecece;
+            background: #F6F6f6;
+            border-radius: 6px;
+        }
+
+        .btn {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            border-radius: 7px;
+            border: none;
+            color: #ffffff;
+            font-size: 11px;
+            padding: 5px 15px 5px 15px;
+            text-decoration: none;
+            outline:0;
+            float: right;
+        }
+
+        .btn:hover {
+            background: #3cb0fd;
+            background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+            text-decoration: none;
+        }
+
+        .btn-del {
+            background: #db3339;
+            background-image: -webkit-linear-gradient(top, #db3d4e, #b91927);
+        }
+
+        .btn-del:hover {
+            background: #db664e;
+            background-image: -webkit-linear-gradient(top, #db7a6d, #b94837);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+</head>
+<body>
+    <div>
+        <div style="width: 70%;float: left;"> <input type="text" id="new-phrase"/></div>
+        <div style="width: 30%;float: right;"><button class="btn" id="add-new-phrase">добавить</button></div>
+        <div style="clear: both;"></div>
+    </div>
+    <hr/>
+    <div>
+        <h4 id="learn-alert"></h4>
+        <ul class="phrases-list">
+        </ul>
+    </div>
+    <hr/>
+    <div style="float: left">
+        <button style="width: 350px; margin-bottom: 5px;" class="btn btn-del" id="reset-all">Очистить данные и перезагрузить страницу</button>
+    </div>
+</body>
+</html>

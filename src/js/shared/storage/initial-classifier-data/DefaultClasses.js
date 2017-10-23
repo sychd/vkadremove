@@ -1,0 +1,1 @@
+export const defaultClasses = { pos: { amount: 1 }, neg: { amount: 900 }, totalAmount: 901 };

@@ -1,0 +1,6 @@
+.idea
+dist/*.bundle.js
+dist/*.html
+src/dist
+npm-debug.log
+node_modules
